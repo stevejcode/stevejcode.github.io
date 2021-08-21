@@ -7,3 +7,9 @@ body {
     background: rgb(101, 130, 180);
 
 }
+
+.hwgroup {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px;
+}
