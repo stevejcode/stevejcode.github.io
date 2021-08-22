@@ -4,12 +4,28 @@ h2  {
 }
 body {
     font-family: courier new;
-    background: rgb(101, 130, 180);
+    background: #d9e1e2;
+    text-align: center;
+    padding-top: 25px;
 
 }
 
-.hwgroup {
-    display: inline-block;
+.hwbutton {
+    color: #efefef;
+    background: #003057;
     border: 1px solid black;
-    padding: 20px;
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 120px;
 }
+
+.hwbutton:hover, .hwbutton:active {
+    color:#003057;
+    background:#e56a54
+  }
