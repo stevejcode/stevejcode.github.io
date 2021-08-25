@@ -5,60 +5,59 @@ html body {
 }
 
 h2  {
-    font-family: 'Open Sans', sans-serif;
-    border: outset 5px;
     color: #efefef;
-    height: 25px;
+    border: outset 5px;
     background-color: #e56a54;
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 0px;
-    margin-right: 12px;
     font-size: 20px;
-}
-
-h3  {
-    color: #efefef;
-    background: #e56a54;
-    border: outset 5px;
-    font-size: 17px;
-    padding: 7px 20px;
-    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    height: 18px;
+    display: inline-block;
+    padding: 8px 15px;
     margin: 0px;
     margin-right: 12px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    min-width: 20px;
 }
 
 body {
-    font-family: courier new;
     background: #d9e1e2;
+    font-family: courier new;
     text-align: center;
     padding-top: 25px;
    
 
 }
 
-
 .hwbutton {
     color: #efefef;
-    background: #003057;
     border: outset 5px;
+    background: #003057;
     font-size: 17px;
-    padding: 7px 12px;
     font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px 12px;
     margin: 6px 0;
     margin-right: 12px;
     display: inline-block;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     min-width: 120px;
 }
 
-.hwbutton:hover, .hwbutton:active {
+.hwbutton:hover, .hwbutton:active, button {
     color:#003057;
-    background:#e56a54;
     border: outset;
+    background:#e56a54;
   }
+
+  button {
+    color: #efefef;
+    border: outset 5px;
+    background: #003057;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px 20px;
+    margin: 0px;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 20px;
+}
