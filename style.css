@@ -1,13 +1,13 @@
 html body {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 h2  {
     color: #efefef;
     border: outset 5px;
-    background-color: #e56a54;
+    background: #003057;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     height: 18px;
@@ -25,6 +25,33 @@ body {
 }
 
 .hwbutton {
+    color: #efefef;
+    border: outset 5px;
+    background: #003057;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px 12px;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 120px;
+}
+.htitle {
+    color: #efefef;
+    border: outset 5px;
+    background: #003057;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    height: 18px;
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0px;
+    margin-right: 12px;
+}
+
+.hwform {
     color: #efefef;
     border: outset 5px;
     background: #003057;
