@@ -23,40 +23,48 @@
     <p style="font-family: 'Open Sans', sans-serif;">Part 2</p>
 
     <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
+
     <div class="hwform">
-    <p>Create a webpage that contains a script that inputs three
+        <p>Create a webpage that contains a script that inputs three
         integers via form text boxes and displays the sum, average, and product of the three integers, and the smallest
         and largest of the three integers.</p>
     </div>
 
-    <!-- <div style="border: solid; background-color: #ebebeb; display: inline-block; padding: 5px 5px;"> -->
-        <div class="hwform">
+    <div class="hwform">
         <h3>Please type a number for each of the 3 number boxes:</h3>
         <form name="form">
-            Input first number:
-            <input type="number" name="fnumber1">
-            Input second number:
-            <input type="number" name="fnumber2">
-            Input third number:
-            <input type="number" name="fnumber3"><br>
-            <input style="padding: 5px 5px; margin-top: 10px;" type="button" value="Submit" onclick="integers()"><br><br>
-            Sum of the 3 numbers are: <br>
-            <input type="number" name="total1"><br>
-            Average of the 3 numbers are: <br>
-            <input type="number" name="total2"><br>
-            Product of the 3 numbers are: <br>
-            <input type="number" name="total3"><br>
-            Highest number of the 3 values is:<br>
-            <input type="number" name="total4"><br>
-            Smallest number of the 3 values is:<br>
-            <input type="number" name="total5"><br>
+            <label for="fnumber1">Input first number:</label>
+            <input type="number" name="fnumber1" id="fnumber1">
+
+            <label for="fnumber2">Input second number:</label>
+            <input type="number" name="fnumber2" id="fnumber2">
+
+            <label for="fnumber3">Input third number:</label>
+            <input type="number" name="fnumber3" id="fnumber3"><br>
+
+            <input style="padding: 5px 5px; margin-top: 10px;" type="button" value="Submit" onclick="integers()"><br>
+
+            <label for="total1">Sum of the 3 numbers are:</label><br>
+            <input type="number" name="total1" id="total1"><br>
+            
+            <label for="total2">Average of the 3 numbers are:</label><br>
+            <input type="number" name="total2" id="total2"><br>
+
+            <label for="total3">Product of the 3 numbers are:</label><br>
+            <input type="number" name="total3" id="total3"><br>
+
+            <label for="total4">Highest number of the 3 values is:</label><br>
+            <input type="number" name="total4" id="total4"><br>
+
+            <label for="total5">Smallest number of the 3 values is:</label><br>
+            <input type="number" name="total5" id="total5"><br>
+
             <input style="padding: 5px 5px; margin-top: 5px;" type="reset" value="CLEAR">
         </form>
     </div>
 
-</body>
-
 <footer>
 </footer>
+</body>
 
 </html>
