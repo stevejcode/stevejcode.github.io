@@ -55,7 +55,7 @@ const averageTotal = (total) => {
 
 const handleGrades = (total, letter) => {
     document.getElementById("result").value = (`
-    Student Final Average: ${total} ${letter} 
+    Student Final Average: ${total} (${letter}) Passing Score!
     `);
 
     document.getElementById("error").innerHTML = ""
