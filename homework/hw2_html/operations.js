@@ -1,5 +1,4 @@
-function integers()
-{
+function integers() {
     //vars 
     var number1, number2, number3, sum, average, product, total;
 
@@ -14,7 +13,7 @@ function integers()
     sum = number1 + number2 + number3;
 
     //getting the average
-    average = (number1 + number2 + number3)/3;
+    average = (number1 + number2 + number3) / 3;
 
     //multiplying the three numbers
     product = number1 * number2 * number3;
@@ -35,5 +34,5 @@ function integers()
     document.form.total4.value = max;
     //display lowest number
     document.form.total5.value = min;
-                                   
+
 }

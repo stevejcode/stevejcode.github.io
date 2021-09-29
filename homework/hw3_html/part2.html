@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Homework 2" content="Learning Javascript">
+    <title>CIS-114 Homework 3</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="sales.js"></script>
+</head>
+
+<body>
+    <h2>CIS 114 Homework 3 - Functions</h2>
+
+    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a
+            href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a
+            href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a
+            href="../hw8.html">HW 8</a>
+    </header>
+
+    <p style="font-family: 'Open Sans', sans-serif;">Part 2</p>
+    <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
+
+    <div class="hwform">
+
+        <p>Create a web page that contains a script that includes at the top of your form a text box for the
+            salesperson's name for the user to enter.</p>
+
+        <p>Next input that salesperson's items sold. Then calculates how much the salesperson sold and how much they
+            earned, and then output the results. Be sure to round the outputted results to 2 decimal places (money is
+            not represented with more than 2 decimals, right?). Use input boxes to input the number sold for each of the
+            items 1-4. You should also check for valid numeric input (make sure the number of items sold is never
+            negative, < 0, as nobody sells negative number of items, right?) and right-justify all amounts.</p>
+
+    </div>
+
+    <div style="border: solid; background-color: #ebebeb; display: inline-block; padding: 5px 5px;">
+        <h2>Salespeople on a commission basis</h2>
+        <form name="sale-form">
+
+            <label for="saleperson-name">
+                <strong>Salesperson:</strong>
+                <input type="text" id="saleperson-name" name="number1" min="0">
+            </label>
+            <h4>Enter the number of items sold for each item number</h4>
+            <label for="item1">
+                <span><strong>Item 1:</strong> </span>
+                <input type="number" id="item1" name="number1" min="0"><br>
+            </label>
+            <label for="item2">
+                <span><strong>Item 2:</strong> </span>
+                <input type="number" id="item2" name="number1" min="0"><br>
+            </label>
+            <label for="item3">
+                <span> <strong> Item 3:</strong> </span>
+                <input type="number" id="item3" name="number1" min="0"><br>
+            </label>
+            <label for="item4">
+                <span><strong>Item 4:</strong> </span>
+                <input type="number" id="item4" name="number1" min="0"><br>
+            </label>
+
+            <input type="button" id="results" onclick="userInput()" value="Submit">
+            <input type="reset" value="Clear">
+            <div id="error"></div><br>
+
+            <table>
+                <tr>
+                    <th>Item #</th>
+                    <th>Price</th>
+                    <th>Number Sold</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>239.99</td>
+                    <td><input type="number" readonly id="item-one" name="number1" min="0"></td>
+                    <td><input type="number" readonly id="item-one-result" name="number1" min="0"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>129.75</td>
+                    <td><input type="number" readonly id="item-two" name="number1" min="0"></td>
+                    <td><input type="number" readonly id="item-two-result" name="number1" min="0"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>99.95</td>
+                    <td><input type="number" readonly id="item-three" name="number1" min="0"></td>
+                    <td><input type="number" readonly id="item-three-result" name="number1" min="0"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>350.89</td>
+                    <td><input type="number" readonly id="item-four" name="number1" min="0"></td>
+                    <td><input type="number" readonly id="item-four-result" name="number1" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Total Amount Sold:</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="number" readonly id="total-sold" name="number1" min="0"></td>
+                <tr>
+                    <td>Total Weekly Earnings:</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="number" readonly id="weekly-earnings" name="number1" min="0"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+
+</html>

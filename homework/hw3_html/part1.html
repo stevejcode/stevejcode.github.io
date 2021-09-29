@@ -4,37 +4,60 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="Homework 2" content="Learning Javascript">
+    <meta name="Homework 3" content="Learning Javascript">
     <title>CIS-114 Homework 3</title>
     <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="grades.js"></script>
 </head>
 
 <body>
-        <h2>CIS 114 Homework 3 - Basic Operations</h2>
+    <h2>CIS 114 Homework 3 - Functions</h2>
 
-    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a href="../hw8.html">HW 8</a></header>
+    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a
+            href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a
+            href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a
+            href="../hw8.html">HW 8</a>
+    </header>
 
     <p style="font-family: 'Open Sans', sans-serif;">Part 1</p>
-
     <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
 
     <div class="hwform">
 
-        <p>Create a webpage that contains the heading Student Grades, and inputs a student's homework average, mid-term exam score, final exam score, and participation (all those grades will be entered as integers). Create a script that checks for valid input, i.e., that the input is between 0-100 and that, of course, the input are all numbers. If all input is valid then calculate and display the student's final average according to the formula:</p>
-
-            <p>final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * participation)</p>
+        <p>Create a webpage that contains the heading Student Grades, and inputs a student's homework average, mid-term
+            exam score, final exam score, and participation (all those grades will be entered as integers). Create a
+            script that checks for valid input, i.e., that the input is between 0-100 and that, of course, the input are
+            all numbers. If all input is valid then calculate and display the student's final average according to the
+            formula:
+        </p>
+        <p>final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * participation)</p>
 
     </div>
 
-    <div style="border: solid; background-color: #ebebeb; display: inline-block; padding: 5px 5px;">
 
-     <script>
-                
-     </script>
-</div>
+    <h4><strong>Students Grades</strong></h4>
+    <form name="grade-form">
+        <label><strong>Homework score:</strong></label>
+        <input type="number" id="hw-score" name="num1"><br>
 
-<footer>
-</footer>
+        <label><strong>Min-term score:</strong></label>
+        <input type="number" id="mt-score" name="num2"><br>
+
+        <label><strong>Final Exam score:</strong></label>
+        <input type="number" id="fn-score" name="num3"><br>
+
+        <label><strong>Participation score:</strong></label>
+        <input type="number" id="p-score" name="num3"><br>
+
+        <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
+        <input type="reset" value="Clear"><br>
+        <input type="text" id="result" placeholder="Results show here!" readonly style="width: 40%;">
+        <div id="error"></div><br>
+    </form>
+    </div>
+
+    <footer>
+    </footer>
 </body>
 
 </html>

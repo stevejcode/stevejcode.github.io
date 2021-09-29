@@ -24,6 +24,10 @@ body {
     padding-top: 25px;
 }
 
+#error{
+    color: red;
+  }
+
 .hwbutton {
     color: #efefef;
     border: outset 5px;
