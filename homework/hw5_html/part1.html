@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Homework 5" content="Learning Javascript">
+    <title>CIS-114 Homework 5</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="arrays1.js"></script>
+</head>
+
+<body>
+
+    <h2>CIS 114 Homework 5 - Arrays</h2>
+
+    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a
+            href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a
+            href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a
+            href="../hw8.html">HW 8</a>
+    </header>
+
+    <p style="font-family: 'Open Sans', sans-serif;">Part 1</p>
+    <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
+
+    <div class="hwform">
+        <p>Create a webpage containing a form that displays an input text box, a group of radio buttons, a group of
+            checkboxes, and select items (a drop-down or datalist element); along with a script that executes form
+            validation.
+
+            Your script should validate whether the user has entered data in the input text box, has checked a radio
+            button, has checked at least one checkbox, and has selected an option from the list of options in the select
+            (or datalist) element.
+
+            Use a submit button to invoke the validation script, so that the form is processed only when the form fields
+            are ALL valid. If a field is invalid then display a message to the user.
+        </p>
+    </div>
+    <div class="hwform">
+        <form name="form">
+            <h4>Make a dog</h4><br>
+            <label for="dogname">Input a name:</label>
+            <input type="text" id="name" required><br>
+
+            <p>Pick a hair type:</p>
+            <label for="short">Short Hair</label>
+            <input type="radio" id="short" name="hair" value="short"><br>
+            <label for="mid">Medium Hair</label>
+            <input type="radio" id="medium" name="hair" value="medium"><br>
+            <label for="long">Long Hair</label>
+            <input type="radio" id="long" name="hair" value="long"><br>
+
+            <p>Select a breed or mix:</p>
+            <label for="gsd">German Shepherd</label>
+            <input type="checkbox" id="gsd" name="gsd" value="gsddog"><br>
+            <label for="pit">Pit Bull</label>
+            <input type="checkbox" id="pit" name="pit" value="pitdog"><br>
+            <label for="lab">Labrador</label>
+            <input type="checkbox" id="lab" name="lab" value="labdog"><br><br>
+
+            <label for="age">Pick an age: </label><br>
+            <select name="age" id="age" required>
+                <option value="">None</option>
+                <option value="puppy">Puppy</option>
+                <option value="teen">Teen</option>
+                <option value="senior">Senior</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Submit" onclick="formChecker()">
+            <input type="reset" value="Clear">
+            </table>
+        </form>
+
+        <div id="error">
+        </div>
+        <div id="allgood">
+
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+
+</html>

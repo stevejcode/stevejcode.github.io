@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Homework 5" content="Learning Javascript">
+    <title>CIS-114 Homework 5</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="arrays2.js"></script>
+</head>
+
+<body>
+
+    <h2>CIS 114 Homework 5 - Arrays</h2>
+
+    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a
+            href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a
+            href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a
+            href="../hw8.html">HW 8</a>
+    </header>
+
+    <p style="font-family: 'Open Sans', sans-serif;">Part 2</p>
+    <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
+
+    <div class="hwform">
+        <p>Create a 2nd webpage that contains a script that utilizes 2 pulldown menus. The first one should utilize an
+            onchange event handler. The second should utilize a button with an onclick event handler to navigate to a
+            page after an option is selected. Each pulldown menu should include at least 3 URL destinations. The website
+            should open in another tab/window so the user does not need to use the back button of the browser to go back
+            to Part 2 page.
+        </p>
+    </div>
+
+    <div class="hwform">
+        <form name="form">
+            <h4>Part A: onchange</h4>
+            <form>
+                <label for="onchange">Select a website: </label><br>
+                <select name="onchange" id="onchange" required onchange="onChange()">
+                    <option value="none">None</option>
+                    <option value="https://www.collegeofsanmateo.edu/">College of San Mateo</option>
+                    <option value="https://www.amazon.com/">Amazon</option>
+                    <option value="https://phs-spca.org/">Peninsula Humane Society & SPCA</option>
+                </select>
+                <br>
+                <br>
+
+                <h4>Part B: onclick</h4>
+                <form>
+                    <label for="onclick">Select a website: </label><br>
+                    <select name="onclick" id="onclick" required>
+                        <option value="none">None</option>
+                        <option value="https://www.collegeofsanmateo.edu/">College of San Mateo</option>
+                        <option value="https://www.amazon.com/">Amazon</option>
+                        <option value="https://phs-spca.org/">Peninsula Humane Society & SPCA</option>
+                    </select><br>
+
+                    <input type="button" value="Click Here" onclick="onClick()">
+
+                </form>
+                <div id="error">
+                </div>
+                <div id="allgood1">
+
+                </div>
+
+            </form>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
