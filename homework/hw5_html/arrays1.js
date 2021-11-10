@@ -6,9 +6,9 @@ const formChecker = () => {
     let short = document.getElementById("short").checked;
     let medium = document.getElementById("medium").checked;
     let long = document.getElementById("long").checked;
-    let optionValue = document.getElementById("age");
+    let pickOption = document.getElementById("age");
 
-    if ((gsdDog || labDog || pitDog) && (short || medium || long) && (optionValue.selectedIndex !== 0) && (dogName !== "")) {
+    if ((gsdDog || labDog || pitDog) && (short || medium || long) && (pickOption.selectedIndex !== 0) && (dogName !== "")) {
         allGood()
     } else {
         formError();
