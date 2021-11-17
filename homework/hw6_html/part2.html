@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Homework 6" content="Learning Javascript">
+    <title>CIS-114 Homework 6</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="objects2.js"></script>
+</head>
+
+<body>
+
+    <h2>CIS 114 Homework 6 - Objects</h2>
+
+    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a
+            href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a
+            href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a
+            href="../hw8.html">HW 8</a>
+    </header>
+
+    <p style="font-family: 'Open Sans', sans-serif;">Part 2</p>
+    <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
+
+    <div class="hwform">
+        <p>Create a webpage that contains a script using a form that allows the user to input several lines of text and
+            a search character and uses the String method charAt to determine the number of occurrences of the search
+            character within the text. Use a form textarea for the text and a form input box for the search character.
+        </p>
+    </div>
+
+    <div class="hwform">
+        <form name="form">
+            <label for="text">Enter a text: </label>
+            <textarea cols="20" rows="1" id="text" name="text" required></textarea>
+            <p id="error"></p>
+            <label for="char">Search letter character: </label>
+            <input type="text" id="char" name="char" maxlength="1" required />
+            <p id="error2"></p>
+            <p id="result"></p>
+            <label for="original">Original Text: </label>
+            <textarea cols="20" rows="1" id="original" readonly></textarea>
+    </div>
+    </form>
+    <br>
+    <button type="submit" onclick="search()">Submit</button>
+    <button type="reset" onclick="clearField()">Clear</button>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
