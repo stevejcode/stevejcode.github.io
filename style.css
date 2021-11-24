@@ -93,3 +93,29 @@ body {
     text-decoration: none;
     min-width: 20px;
 }
+
+/* Homework 7 CSS */
+.night{
+    background-color: rgb(20, 19, 19);
+    color: white ;
+  }
+  .coral{
+    background-color: coral;
+    color: white ;
+  }
+  .orangecss{
+    font-weight:bolder;
+    color:orange;
+  }
+  .coralcss{
+    font-weight:bolder;
+    color:coral;
+  }
+  .browncss{
+    font-weight:bolder;
+    color:brown;
+  }
+  .attri{
+    font-style: italic;
+    font-size:xx-large;
+  }

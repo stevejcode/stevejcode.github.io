@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Homework 7" content="Learning Javascript">
+    <title>CIS-114 Homework 7</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="objects1.js"></script>
+</head>
+
+<body id="background">
+
+    <h2>CIS 114 Homework 7 - Objects Model</h2>
+
+    <header> <a style="font-family: 'Open Sans', sans-serif;" href="../../page.html">Main Page</a> | <a
+            href="../hw2.html">HW 2</a> | <a href="../hw3.html">HW 3</a> | <a href="../hw4.html">HW 4</a> | <a
+            href="../hw5.html">HW 5</a> | <a href="../hw6.html">HW 6</a> | <a href="../hw7.html">HW 7</a> | <a
+            href="../hw8.html">HW 8</a>
+    </header>
+
+    <p style="font-family: 'Open Sans', sans-serif;">Part 1</p>
+    <p style="font-family: 'Open Sans', sans-serif;"><u>Instructions</u></p>
+
+    <div class="hwform">
+        <label for="backg">Change Background Color: </label>
+        <br>
+        <select name="backg" id="backg" onchange="backgColor()" required>
+            <option value="normal">Normal Background</option>
+            <option value="night">Night Background</option>
+            <option value="coral">Coral Background</option>
+        </select>
+
+        <p>Change font color:</p>
+        <label for="orangecolor">Orange</label>
+        <input type="checkbox" id="orangecolor" onchange="fontColor()" name="orangecolor" value="orange" />
+        <br>
+
+        <label for="coralcolor">Coral</label>
+        <input type="checkbox" id="coralcolor" onchange="fontColor()" name="coralcolor" value="coral" />
+        <br>
+
+        <label for="browncolor">Brown</label>
+        <input type="checkbox" id="browncolor" onchange="fontColor()" name="browncolor" value="brown" />
+        <br>
+
+        <p>Title Styles:</p>
+        <label for="style">Large Font & Italic</label>
+        <input type="radio" id="style" onchange="changeFontStyle()" name="style">
+        <br>
+        <label for="style">Clear</label>
+        <input type="radio" id="style" onchange="changeFontStyle()" name="style">
+        <br>
+        <br>
+        <h2 id="title">Title Style</h2>
+        <p id="part1">
+            Create a webpage in which users are allowed to select a page layout and formatting through the use of the
+            className property.
+        </p>
+
+        <p id="part2">
+            Attention! Remember that certain styles cannot be applied at the same time! For example, it is not possible
+            to
+            offer a group of checkboxes for the user to select different font-sizes as you will not be able to apply all
+            the
+            choices the user can make with a group of checkboxes (in a group of checkboxes the user can select more than
+            one
+            option, right?).
+        </p>
+
+        <h2 id="title2">Title Style 2</h2>
+        <p id="part3">
+            You should not ignore any of the choices made by the user which means that once a choice is made, it should
+            remainactive on the page or the area selected to apply the changes. The choice should be applied when the
+            choice
+            ismade!
+        </p>
+    </div>
+    </form>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
